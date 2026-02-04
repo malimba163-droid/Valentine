@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Be My Valentine 💘</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    .yes:hover {
+      background: #ff1e4d;
+      transform: scale(1.1);
+    }
+
+    .no {
+      background: white;
+      color: #ff4d6d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>💖 Will you be my Valentine, <br>Biyabo? 💖</h1>
+
+    <button class="yes" onclick="yesClicked()">Yes 💘</button>
+    <button class="no" onclick="alert('Think again 😏❤️')">No 🙈</button>
+  </div>
+
+  <script>
+    function yesClicked() {
+      document.body.innerHTML = `
+        <div style="text-align:center;color:white;">
+          <h1>🎉 Yaaay!!! 🎉</h1>
+          <p>You just made me the happiest person 💕</p>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
