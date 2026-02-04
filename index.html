@@ -53,7 +53,23 @@
       background: white;
       color: #ff4d6d;
     }
-  </style>
+ .heart {
+  position: fixed;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+} </style>
 </head>
 <body>
 
@@ -74,6 +90,17 @@
       `;
     }
   </script>
+<script>
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (Math.random() * 20 + 15) + "px";
+    document.body.appendChild(heart);
 
+    setTimeout(() => heart.remove(), 6000);
+  }, 500);
+</script>
 </body>
 </html>
