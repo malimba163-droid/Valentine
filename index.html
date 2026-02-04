@@ -82,10 +82,14 @@
 
   <script>
   function yesClicked() {
-    window.location.href =
-      "https://wa.me/260976176661?text=I%20said%20YES%20❤️%20Happy%20Valentine’s%20Day!";
+    const confirmYes = confirm("Are you sure? ❤️");
+
+    if (confirmYes) {
+      window.location.href =
+        "https://wa.me/260976176661?text=I%20said%20YES%20❤️%20Happy%20Valentine’s%20Day!";
+    }
   }
-</script>
+  </script>
 <script>
   setInterval(() => {
     const heart = document.createElement("div");
