@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+¾<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -81,21 +81,29 @@ background-size: cover;
   </iframe>
 </div>
   <div class="card">
-    <h1> Will you be my Valentine, <br>Biyabo? 💞</h1>
+   <h1>She Said YES! 💍❤️</h1>
 
-    <button class="yes" onclick="yesClicked()">Yes 💘</button>
-    <button class="no" onclick="alert('Think again 😏❤️')">No 🙈</button>
-  </div>
+<p style="font-size: 1.2rem; margin-top: 10px;">
+  Our story begins now… ✨
+</p>
+
+<p style="margin-top: 20px; font-size: 1.1rem;">
+  Biyabo ❤️  
+  Will you go on a date date with me  
+  on the <strong>13th at 14:00?</strong> 🌹
+</p>
+
+<button class="yes" onclick="confirmDate()">Yes, it's a date 💕</button>
 
   <script>
-  function yesClicked() {
-    const confirmYes = confirm("This means forever… are you really sure? 💍🥹❤️");
+function yesClicked() {
+  // old function
+}
 
-    if (confirmYes) {
-      window.location.href =
-        "https://wa.me/260976176661?text=I%20said%20YES%20❤️%20Happy%20Valentine’s%20Day!";
-    }
-  }
+function confirmDate() {
+  window.location.href =
+    "https://wa.me/260976176661?text=Yes%20it's%20a%20date%20on%20the%2013th%20at%2015:00%20❤️";
+}
   </script>
 <script>
   setInterval(() => {
