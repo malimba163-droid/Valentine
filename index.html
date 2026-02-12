@@ -1,9 +1,21 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 ¾<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Be My Valentine 💘</title>
   <style>
+    .subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.date-text {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
     body {
       margin: 0;
       height: 100vh;
@@ -12,7 +24,7 @@
       justify-content: center;
       background: url("IMG-20260104-WA0062.jpg") no-repeat center center fixed;
 background-size: cover;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: 'Poppins', sans-serif;
       color: white;
       text-align: center;
     }
@@ -81,16 +93,18 @@ background-size: cover;
   </iframe>
 </div>
   <div class="card">
-   <h1>She Said YES! 💍❤️</h1>
+   <h1>You Said YES! 💍❤️</h1>
 
-<p style="font-size: 1.2rem; margin-top: 10px;">
-  Our story begins now… ✨
+<p class="subtitle">Our story continues✨</p>
+<p class="date-text">
+  13th · 15:00  
+  <br>
+  Up for a date? 🌹
 </p>
 
-<p style="margin-top: 20px; font-size: 1.1rem;">
-  Biyabo ❤️  
-  Will you go on a date date with me  
-  on the <strong>13th at 14:00?</strong> 🌹
+<button class="yes" onclick="confirmDate()">
+  Yes, it’s a date 💕
+</button>
 </p>
 
 <button class="yes" onclick="confirmDate()">Yes, it's a date 💕</button>
